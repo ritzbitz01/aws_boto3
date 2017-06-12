@@ -1,5 +1,5 @@
 description: 
-pack: aws_boto3_elb
+pack: aws_boto3
 enabled: true
 entry_point: run.py
 name: elb_create_load_balancer

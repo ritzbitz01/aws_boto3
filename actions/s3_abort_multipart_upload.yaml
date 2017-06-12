@@ -1,5 +1,5 @@
 description: 
-pack: aws_boto3_s3
+pack: aws_boto3
 enabled: true
 entry_point: run.py
 name: s3_abort_multipart_upload

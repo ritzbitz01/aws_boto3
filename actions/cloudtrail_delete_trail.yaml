@@ -1,5 +1,5 @@
 description: 
-pack: aws_boto3_cloudtrail
+pack: aws_boto3
 enabled: true
 entry_point: run.py
 name: cloudtrail_delete_trail

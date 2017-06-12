@@ -1,5 +1,5 @@
 description: 
-pack: aws_boto3_route53
+pack: aws_boto3
 enabled: true
 entry_point: run.py
 name: route53_get_traffic_policy
