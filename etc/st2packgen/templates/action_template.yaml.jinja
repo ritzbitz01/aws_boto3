@@ -25,7 +25,7 @@ parameters:
   {%- for parameter in paramsreq %}
   {{ parameter.name }}:
     type: {{ parameter.type }}
-    description: "{{ parameter.description }}"
+    description: '{{ parameter.description }}'
     required: true
   {%- endfor %}
   {%- for parameter in params %}

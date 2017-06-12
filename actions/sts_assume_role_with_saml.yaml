@@ -24,15 +24,15 @@ parameters:
     type: string
   RoleArn:
     type: string
-    description: "The Amazon Resource Name (ARN) of the role that the caller is assuming."
+    description: 'The Amazon Resource Name (ARN) of the role that the caller is assuming.'
     required: true
   PrincipalArn:
     type: string
-    description: "The Amazon Resource Name (ARN) of the SAML provider in IAM that describes the IdP."
+    description: 'The Amazon Resource Name (ARN) of the SAML provider in IAM that describes the IdP.'
     required: true
   SAMLAssertion:
     type: string
-    description: "The base-64 encoded SAML authentication response provided by the IdP. For more information, see Configuring a Relying Party and Adding Claims in the Using IAM guide. "
+    description: 'The base-64 encoded SAML authentication response provided by the IdP. For more information, see Configuring a Relying Party and Adding Claims in the Using IAM guide. '
     required: true
   Policy:
     type: string
