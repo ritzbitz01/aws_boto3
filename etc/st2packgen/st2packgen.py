@@ -95,7 +95,7 @@ for op in mysrv.operation_names:
         tmp['name'] = sname
         tmp['type'] = stype
         if 'documentation' in sdata:
-            tmp['description'] = striphtml(sdata['documentation'].rstrip().replace('"', "'"))
+            tmp['description'] = striphtml(sdata['documentation'].rstrip().replace("'", "\'"))
             #tmp['description'] = re.sub('[\[\]^/]', '', tmp['description'])
         else:
             tmp['description'] = ''
