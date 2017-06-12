@@ -43,7 +43,7 @@ parameters:
     description: "The number of periods over which data is compared to the specified threshold."
     required: true
   Threshold:
-    type: double
+    type: number
     description: "The value against which the specified statistic is compared."
     required: true
   ComparisonOperator:
