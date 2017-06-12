@@ -1,0 +1,23 @@
+---
+ref: aws_boto3
+name : aws_boto3
+description : AWS Boto3 based actions
+keywords:
+  - aws
+  - amazon web services
+  - amazon
+  - ec2
+  - sqs
+  - sns
+  - route53
+  - cloud
+  - iam
+  - vpc
+  - s3
+  - CloudFormation
+  - RDS
+  - SQS
+
+version : 0.0.1
+author : Andy Moore
+email : andrew.moore@pearson.com

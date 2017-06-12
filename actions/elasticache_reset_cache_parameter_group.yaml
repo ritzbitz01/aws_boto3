@@ -1,0 +1,34 @@
+description: 
+pack: aws_boto3_elasticache
+enabled: true
+entry_point: run.py
+name: elasticache_reset_cache_parameter_group
+runner_type: run-python
+parameters:
+  action:
+    default: reset_cache_parameter_group
+    immutable: true
+    type: string
+  cls:
+    default: elasticache
+    type: string
+  headers:
+    type: string
+  module_path:
+    default: boto3
+    immutable: true
+    type: string
+  region_name:
+    type: string
+  assume_role:
+    type: string
+  CacheParameterGroupName:
+    type: string
+    description: "The name of the cache parameter group to reset."
+    required: true
+  ResetAllParameters:
+    type: boolean
+    description: "If true, all parameters in the cache parameter group are reset to their default values. If false, only the parameters listed by ParameterNameValues are reset to their default values. Valid values: true | false "
+  ParameterNameValues:
+    type: array
+    description: "An array of parameter names to reset to their default values. If ResetAllParameters is true, do not use ParameterNameValues. If ResetAllParameters is false, you must specify the name of at least one parameter to reset."

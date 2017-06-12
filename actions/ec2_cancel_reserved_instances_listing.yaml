@@ -1,0 +1,28 @@
+description: 
+pack: aws_boto3_ec2
+enabled: true
+entry_point: run.py
+name: ec2_cancel_reserved_instances_listing
+runner_type: run-python
+parameters:
+  action:
+    default: cancel_reserved_instances_listing
+    immutable: true
+    type: string
+  cls:
+    default: ec2
+    type: string
+  headers:
+    type: string
+  module_path:
+    default: boto3
+    immutable: true
+    type: string
+  region_name:
+    type: string
+  assume_role:
+    type: string
+  ReservedInstancesListingId:
+    type: string
+    description: "The ID of the Reserved Instance listing."
+    required: true
