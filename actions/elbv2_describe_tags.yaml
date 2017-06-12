@@ -24,5 +24,5 @@ parameters:
     type: string
   ResourceArns:
     type: array
-    description: "The Amazon Resource Names (ARN) of the resources."
+    description: 'The Amazon Resource Names (ARN) of the resources.'
     required: true

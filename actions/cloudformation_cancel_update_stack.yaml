@@ -24,5 +24,5 @@ parameters:
     type: string
   StackName:
     type: string
-    description: "The name or the unique stack ID that is associated with the stack."
+    description: 'The name or the unique stack ID that is associated with the stack.'
     required: true

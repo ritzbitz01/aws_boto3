@@ -24,9 +24,9 @@ parameters:
     type: string
   LoadBalancerArn:
     type: string
-    description: "The Amazon Resource Name (ARN) of the load balancer."
+    description: 'The Amazon Resource Name (ARN) of the load balancer.'
     required: true
   IpAddressType:
     type: string
-    description: "The IP address type. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses). Internal load balancers must use ipv4."
+    description: 'The IP address type. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses). Internal load balancers must use ipv4.'
     required: true

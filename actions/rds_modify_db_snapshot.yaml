@@ -24,8 +24,8 @@ parameters:
     type: string
   DBSnapshotIdentifier:
     type: string
-    description: "The identifier of the DB snapshot to modify."
+    description: 'The identifier of the DB snapshot to modify.'
     required: true
   EngineVersion:
     type: string
-    description: "The engine version to update the DB snapshot to. "
+    description: 'The engine version to update the DB snapshot to. '

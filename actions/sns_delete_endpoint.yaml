@@ -24,5 +24,5 @@ parameters:
     type: string
   EndpointArn:
     type: string
-    description: "EndpointArn of endpoint to delete."
+    description: 'EndpointArn of endpoint to delete.'
     required: true
