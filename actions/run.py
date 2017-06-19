@@ -13,8 +13,8 @@ class ActionManager(action.BaseAction):
             del kwargs['region_name']
         self.create_boto3_session(kwargs['assume_role'])
         del kwargs['assume_role']
-        if action == 'run_instances':
-            kwargs['user_data'] = self.st2_user_data()
+        # if action == 'run_instances':
+        #     kwargs['user_data'] = self.st2_user_data()
         if action == 'create_tags':
             kwargs['tags'] = self.split_tags(kwargs['tags'])
         if action in ('add_a', 'update_a'):
