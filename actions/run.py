@@ -15,8 +15,8 @@ class ActionManager(action.BaseAction):
         del kwargs['assume_role']
         # if action == 'run_instances':
         #     kwargs['user_data'] = self.st2_user_data()
-        if action == 'create_tags':
-            kwargs['tags'] = self.split_tags(kwargs['tags'])
+        # if action == 'create_tags':
+        #     kwargs['tags'] = self.split_tags(kwargs['tags'])
         if action in ('add_a', 'update_a'):
             kwargs['value'] = kwargs['value'].split(',')
         if 'cls' in kwargs.keys():
