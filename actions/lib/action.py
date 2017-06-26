@@ -83,6 +83,7 @@ class BaseAction(Action):
 
     def get_boto3_session(self, resource):
         region = self.credentials['region']
+        print("action.py:86 REGION: " + region)
         del self.credentials['region']
         return boto3.client(resource, region_name=region)
 
@@ -148,7 +149,6 @@ class BaseAction(Action):
             raise ValueError('Invalid or missing credentials (aws_access_key_id,'
                              'aws_secret_access_key) or region')
 
-        print("Credentials at action.py L151 " + self.credentials)
         resultset = getattr(obj, action)(**kwargs)
         formatted = self.resultsets.formatter(resultset)
         return formatted if isinstance(formatted, list) else [formatted]
