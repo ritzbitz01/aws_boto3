@@ -1,0 +1,35 @@
+description:
+pack: aws_boto3
+enabled: true
+entry_point: run.py
+name: s3_upload_file
+runner_type: run-python
+parameters:
+  action:
+    default: upload_file
+    immutable: true
+    type: string
+  cls:
+    default: s3
+    type: string
+  headers:
+    type: string
+  module_path:
+    default: boto3
+    immutable: true
+    type: string
+  region_name:
+    type: string
+  assume_role:
+    type: string
+  Filename:
+    type: string
+    required: true
+  Bucket:
+    type: string
+    description: 'Name of the bucket to which the file upload was initiated.'
+    required: true
+  Key:
+    type: string
+    description: 'Object key for which the file upload was initiated.'
+    required: true
