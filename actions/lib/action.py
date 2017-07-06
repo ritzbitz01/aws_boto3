@@ -83,11 +83,12 @@ class BaseAction(Action):
 
     def get_boto3_session(self, resource):
         region = self.credentials['region']
-        asak = self.credentials['aws_secret_access_key']
-        aaki = self.credentials['aws_access_key_id']
+        # asak = self.credentials['aws_secret_access_key']
+        # aaki = self.credentials['aws_access_key_id']
         print("action.py:86 RESOURCE: " + resource + " REGION: " + region)
         del self.credentials['region']
-        return boto3.client(resource, region_name=region, aws_secret_access_key=asak, aws_access_key_id=aaki)
+        # return boto3.client(resource, region_name=region, aws_secret_access_key=asak, aws_access_key_id=aaki)
+        return boto3.client(resource, region_name=region)
 
     def split_tags(self, tags):
         tag_dict = {}
